@@ -1,34 +1,51 @@
 name: deploy
 
-# 代码提交到main分支时触发github action
+# 推送到 main 分支时触发 GitHub Actions 构建并部署 GitHub Pages
 on:
   push:
     branches:
       - main
+  workflow_dispatch: # 允许手动触发
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
-        - name: Checkout
-          uses: actions/checkout@v4
-          with:
-              fetch-depth: 0
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-        - name: Setup Hugo
-          uses: peaceiris/actions-hugo@v3
-          with:
-              hugo-version: "latest"
-              extended: true
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.164.0"
+          extended: true
 
-        - name: Build Web
-          run: hugo -D
+      - name: Build
+        run: hugo -D --minify
 
-        - name: Deploy Web
-          uses: peaceiris/actions-gh-pages@v4
-          with:
-              PERSONAL_TOKEN: ${{ secrets.TOKEN }}
-              EXTERNAL_REPOSITORY: [你的github名/你的仓库名]                         # 记得改，不然运行不了
-              PUBLISH_BRANCH: main
-              PUBLISH_DIR: ./public
-              commit_message: auto deploy
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
