@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>xxxxxxxx</title>
+    <link>https://dachuang-mei.github.io/post/</link>
+    <description>Recent content from xxxxxxxx</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    
+    <managingEditor>xxxxxxx@xx.com (dachuang-mei)</managingEditor>
+    <webMaster>xxxxxxx@xx.com (dachuang-mei)</webMaster>
+    
+    <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
+    
+    <lastBuildDate>Sat, 01 Aug 2026 15:26:48 +0800</lastBuildDate>
+    
+    
+    <atom:link href="https://dachuang-mei.github.io/post/index.xml" rel="self" type="application/rss&#43;xml" />
+    
+
+    
+    
+
+    <item>
+      <title>Blog2</title>
+      <link>https://dachuang-mei.github.io/post/blog2/</link>
+      <pubDate>Sat, 01 Aug 2026 15:26:48 &#43;0800</pubDate>
+      <author>xxxxxxx@xx.com (dachuang-mei)</author>
+      <guid>https://dachuang-mei.github.io/post/blog2/</guid>
+      <description>
+        <![CDATA[<h1>Blog2</h1><p>作者：dachuang-mei（xxxxxxx@xx.com）</p>
+        
+          
+        
+        <hr><p>本文2026-08-01首发于<a href='https://dachuang-mei.github.io/'>xxxxxxxx</a>，最后修改于2026-08-01</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>测试</title>
+      <link>https://dachuang-mei.github.io/post/blog1/</link>
+      <pubDate>Sat, 01 Aug 2026 15:22:49 &#43;0800</pubDate>
+      <author>xxxxxxx@xx.com (dachuang-mei)</author>
+      <guid>https://dachuang-mei.github.io/post/blog1/</guid>
+      <description>
+        <![CDATA[<h1>测试</h1><p>作者：dachuang-mei（xxxxxxx@xx.com）</p>
+        
+          <p>文章2</p>
+<p>+++</p>
+<p>cover = { image = &ldquo;images/古城墙.jpeg&rdquo;, alt = &ldquo;封面图描述&rdquo;, caption = &ldquo;图片下方的标题&rdquo; }</p>
+        
+        <hr><p>本文2026-08-01首发于<a href='https://dachuang-mei.github.io/'>xxxxxxxx</a>，最后修改于2026-08-01</p>]]>
+      </description>
+      
+    </item>
+    
+  </channel>
+</rss>
