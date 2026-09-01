@@ -4,5 +4,11 @@ draft = true
 title = '测试'
 +++
 
-我的天哪
+文章2
+
++++
+
+cover = { image = "images/古城墙.jpeg", alt = "封面图描述", caption = "图片下方的标题" }
+
++++
 

@@ -7,16 +7,16 @@
 menu:
   - name: home
     url: ""
-    icon: # default use taichi icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
+    icon: 'e632'# default use taichi icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1'
   - name: archives
     url: "archives"
-    icon:
+    icon: 'e63D'
   - name: about
     url: "about"
-    icon:
+    icon: 'e633'
   - name: friend
     url: "friend"
-    icon:
+    icon: 'e639'
 
 mainSections: ["post"]
 # 年，月，日及时间的格式化样式
@@ -26,17 +26,17 @@ monthFormat: "2006-01"
 dateFormat: "2006-01-02"
 timeFormat: "2006-01-02 15:04:05"
 
-author: D-Sketon
-email: xxx@example.com
-description: "少女祈祷中..."
+author: dachuang-mei
+email: xxxxxxx@xx.com
+description: "岁月在城砖上篆刻，故事在指尖加载……"
 # subtitle: "少女祈祷中..."
 subtitle:
   typing:
-    enable: false
+    enable: ture
     strings:
-      # - Sentence 1
-      # - Sentence 2
-      # - Sentence 3
+       - 拂去历史的尘埃，奉城旧事正娓娓道来。
+       - 正在为您拓印古城墙上的碑文残迹……
+       - 贤城画卷，徐徐展开。
       # - Sentence 4
     typeSpeed: 100              # 打字速度（毫秒/字符） 
     backSpeed: 50               # 删除速度（毫秒/字符）
@@ -114,7 +114,7 @@ footer:
 # Sidebar
 # sidebar: right # deprecated, use sidebar.position instead
 sidebar:
-  position: right
+  position: left
   menu: true  # whether to show the sidebar menu button, ignored on mobile devices
   article:
     show_common: true # whether to show common sidebar, ignored on mobile devices
@@ -146,7 +146,7 @@ social:
   # telegram: https://t.me/yourname
   # discord: https://discordapp.com/users/yourname
   # steam: https://steamcommunity.com/id/yourname
-  # weixin: 
+   weixin: xxxxxx
   # qq:
   # tiktok:
 
@@ -492,7 +492,7 @@ algolia_search:
 preloader:
   enable: true
   text: 
-    zh-CN: 少女祈祷中...
+    zh-CN: 城墙巍巍，加载就绪。
     zh-TW: 少女祈禱中...
     en: Loading...
     ja: 少女祈祷中...
@@ -626,8 +626,8 @@ share:
   # - linkedin
   # - reddit
   # - weibo
-  # - qq
-  # - weixin
+   - qq
+   - weixin
 
 # show categories card on home page
 home_categories:
