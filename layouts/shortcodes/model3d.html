@@ -1,0 +1,25 @@
+{{- /*
+  3D 模型展示短代码
+  用法： {{< model3d src="models/fengcheng.glb" >}}
+  可选参数：
+    src     模型文件路径（相对 static/），默认 models/fengcheng.glb
+    height  容器高度，默认 70vh
+*/ -}}
+{{- $src := .Get "src" | default "models/fengcheng.glb" -}}
+{{- $height := .Get "height" | default "70vh" -}}
+{{- $ver := .Get "v" | default (string now.Unix) -}}
+<link rel="stylesheet" href="{{ "css/model-viewer.css" | relURL }}?v={{ $ver }}">
+<div class="model-viewer" data-model="{{ $src | relURL }}?v={{ $ver }}" style="height: {{ $height }};">
+  <div class="mv-canvas"></div>
+  <div class="mv-status">
+    <span>正在加载三维模型…</span>
+    <div class="mv-progress"><div class="mv-progress-bar"></div></div>
+  </div>
+  <div class="mv-hint">拖动旋转 · 滚轮缩放 · 右键平移</div>
+  <div class="mv-toolbar">
+    <button type="button" class="mv-btn" data-mv-action="reset">重置视角</button>
+    <button type="button" class="mv-btn" data-mv-action="rotate">自动旋转</button>
+    <button type="button" class="mv-btn" data-mv-action="fullscreen">全屏</button>
+  </div>
+</div>
+<script type="module" src="{{ "js/model-viewer.js" | relURL }}?v={{ $ver }}"></script>

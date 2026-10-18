@@ -17,6 +17,9 @@ menu:
   - name: friend
     url: "friend"
     icon: 'e639'
+  - name: model
+    url: "model"
+    icon: 'images/model-icon.svg'
 
 mainSections: ["post"]
 # 年，月，日及时间的格式化样式
