@@ -30,3 +30,5 @@ FBX2glTF.exe -i fengcheng.fbx -o fengcheng -b -d
 
 - GitHub Pages 单文件上限 100 MB，仓库上限 1 GB；
 - 未压缩的 Revit FBX 常有 80–200 MB，务必转 GLB + Draco。
+
+> 部署方式：GitHub Actions（Settings → Pages → Source = GitHub Actions）。
